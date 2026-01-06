@@ -1,4 +1,18 @@
-	products := r.Group("/api/v1/products")
+//实践：商品 API 设计
+//需求：
+
+//商品列表（分页、搜索）
+//商品详情
+//创建商品
+//更新商品
+//删除商品
+//实现步骤：
+
+//定义商品模型
+//定义请求/响应结构
+//实现各个 Handler
+//注册路由
+products := r.Group("/api/v1/products")
 	{
 		products.GET("", listProducts)         
 		products.GET("/:id", getProduct)       
